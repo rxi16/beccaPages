@@ -48,11 +48,15 @@
       </div>
     </nav>
 
-<!-- login content -->
+<!-- sign up content -->
 <div class="container-fluid">
         <h1><span class="fa fa-sign-in"></span> Sign up</h1>
         <!-- LOGIN FORM -->
-        <form action="/login" method="post">
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <label>Display Name</label>
+                <input type="text" class="form-control" name="displayname">
+            </div>
             <div class="form-group">
                 <label>Username</label>
                 <input type="text" class="form-control" name="username">
@@ -61,11 +65,11 @@
                 <label>Password</label>
                 <input type="password" class="form-control" name="password">
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
         </form>
         <hr>
-        <p>Need an account? <a href="/signup">SIGNUP</a></p>
-        <p>Or click <a href="/">HOME</a></p>
+        <p>Already have an account? <a href="/signup">Log in</a></p>
+        <p>Or click <a href="/">Home</a></p>
 </div>
 <!-- /.container-fluid -->
 
